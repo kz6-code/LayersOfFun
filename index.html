@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Layers of Fun</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <nav class="navbar-inverse" style="position:sticky;top:0;z-index:99999">
+
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#"><img id="logo" src="Layers of fun.png" class="img-responsive img-circle col-lg-3 col-md-3 col-sm-3 col-xs-4">Layers Of Fun</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li><a href="#birthday">Birthday Parties</a></li>
+                <li><a href="#coding">Coding Classes</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="#about">About Us</a></li>
+            </ul>
+        </div>
+        
+    </nav>
+
+    <div class="container">
+        <center>
+        <div class="page-header" id="birthday">
+            <h2 class="text-capitalize">Birthday Parties</h2>
+        </div>
+        </center>
+        <center>
+            <div class="travel_mainDiv">
+                <img class="img-responsive" id="building" src="https://cdn.pixabay.com/photo/2018/04/13/18/22/houston-3317202__480.jpg">
+
+                <h4 class="text-capitalize"><kbd>Our revenue for birthdays</kbd></h4>
+
+                <hr>
+
+                <h5 class="text-success text-left text-capitalize">About</h5>
+
+                <p class="text-muted text-left">There are 15 layers/floors in our building each one having its own special activitie for a child to do just book which ones you want your child to have in there party </p>
+
+            </div>
+        </center>
+            </div>
+            <center>
+                <div class="page-header" id="coding">
+                    <h2 class="text-capitalize">Coding</h2>
+                </div>
+                </center>
+                <center>
+                    <div class="travel_mainDiv">
+                        <img class="img-responsive" id="building" src="https://cdn.pixabay.com/photo/2016/02/19/11/19/computer-1209641_1280.jpg">
+        
+                        <h4 class="text-capitalize"><kbd>What we teach to our future generation</kbd></h4>
+        
+                        <hr>
+        
+                        <h5 class="text-success text-left text-capitalize">About</h5>
+                    
+                        <p class="text-muted text-left"> As we all know our future is AI and ai is made with coding it is very important for our future generation to know how to do these things also coding is one of the most paid jobs we teach hml css c-sharp js python and much more </p>
+        
+                    </div>
+                </center>
+                    </div>
+        <div class="page-header" id="reviews">
+            <h2 class="text-capitalize">reviews</h2>
+        </div>
+
+        Enter your review: <input type="text" id="emp" value="" />
+        <p>
+            <input type="button" id="bt" value="Send Review" onclick="changeLabel()" />
+        </p>
+
+        <div class="bg-primary movie_head" data-toggle="collapse" data-target="#avengers_endgame"> What The People Think of Us<i class="fa fa-sort-desc"></i>
+        </div>
+
+
+        <div id="avengers_endgame" class="collapse">
+
+            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 movie_text">
+                <h5 class="text-succes text-left text-capitalize">Karen 😤:Terrible Place
+                    <span class="glyphicon glyphicon-star"></span>
+                </h5>
+                <p>ABSOLUTE GARBAGE! THEY COMPLETELY MESSED UP MY ORDER! I WANT A FULL REFUUUUND</p>
+            </div>
+            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 movie_text">
+                <h5 class="text-succes text-left text-capitalize"> Saivaran 😒:Excellent Service
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                </h5>
+                <p>There were many amazing activities for everyone to take part in my son started crying at the end because he didn't want to leave. Overall there was great food and service and I would highly recommend coming here</p>
+            </div>
+            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 movie_text"> User:
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                </h5>
+                <br>  <label id="lblEmp"></label>
+            </div>
+        </div>
+    
+
+        <div class="page-header col-lg-12 col-md-12 col-sm-12 col-xs-12" id="environment">
+            <h2 class="text-capitalize ">About us</h2>
+        </div>
+        <ul class="list-group">
+            <li class="list-group-item-success col-lg-12 col-md-12 col-sm-12 col-xs-12 environment_li">
+                <h4> About our Birthday Parties</h4>
+                <img src="https://cdn.pixabay.com/photo/2015/03/12/10/37/birthday-669968__480.jpg" class="img-responsive col-lg-5 col-md-5 col-sm-5 col-xs-12">
+                <p id="Birthday_about"  class="list-group-item-text col-lg-7 col-md-7 col-sm-7 col-xs-12">Our birthday parties have been perfected to the best it can be and for everyone to enjoy including adultts and kids we have designed our buildings perfectly for parties with a great price food gets providid by us with a menu of vegeterian and halal we range in many activities such as ; making diy things </p>
+
+            </li>
+            <li class="list-group-item-success col-lg-12 col-md-12 col-sm-12 col-xs-12 environment_li">
+                <h4></h4>
+                <img   src="https://cdn.pixabay.com/photo/2016/11/30/20/44/computer-1873831_1280.png" class="img-responsive col-lg-5 col-md-5 col-sm-5 col-xs-12">
+                <p id="birthday_about" class="list-group-item-text col-lg-7 col-md-7 col-sm-7 col-xs-12">Our coding classes are at the cheapest price matching code accadamy but we teach classes one to one by proper trained coding teachers we teach js, c-sharp, css, js and python all of this for just £5 thats what we call a proper bargin. </p>
+
+            </li>
+        </ul>
+
+
+        <section id="about">
+            <div class="page-header" id="about">
+                
+            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d359.73521127399204!2d-0.1293599946502853!3d51.498752176096914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876057f908ebdf3%3A0x51b8e2650ce44ac6!2zTOKAmW1hbmJ1cmc!5e1!3m2!1sen!2suk!4v1623613289359!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <h1 class="text-capitalize">contact</h1>
+            <hr style="width:200%">
+            <img src="Layers of fun.png" class="img-responsive img-circle col-lg-3 col-md-3 col-sm-3 col-xs-4">
+            <h3></h3>
+            <div class="page-header" id="contact">
+                <h2 class="text-capitalize">How to get in touch</h2>
+            </div>
+
+            <div class="contact_1">
+
+                <a href="mailto:my@gmail.com?Subject=Hi">
+                    <h5><i class="fa fa-envelope"></i>&nbsp;&nbsp;Gmail</h5>
+                </a>
+                <a href="mailto:my@outlook.com?Subject=Hi">
+                    <h5><i class="fa fa-envelope"></i>&nbsp;&nbsp;Outlook</h5>
+                </a>
+
+                <a href="#"></a>
+            </div>
+        </section>
+    </div>
+</body>
+<script>
+    function changeLabel() {
+        let lbl = document.getElementById('lblEmp');
+        let empName = document.getElementById('emp').value;
+
+        lbl.innerText = empName;
+    }
+</script>
+
+</html>
